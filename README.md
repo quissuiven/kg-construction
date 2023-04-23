@@ -8,7 +8,7 @@
 
 ## Deployed app
 
-The deployed app is accessible at https://chinese-news-ner.onrender.com 
+The deployed app is accessible at https://kg-construction.onrender.com/
 
 ## Running the app on your local
 
