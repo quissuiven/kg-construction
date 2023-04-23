@@ -2,7 +2,7 @@ from flask import Flask, Response, request, render_template
 from flask_wtf import FlaskForm
 from wtforms import StringField, SubmitField
 from wtforms.validators import DataRequired
-from QueryConversion_v2 import *
+from QueryConversion import *
 
 app = Flask(__name__)
  
