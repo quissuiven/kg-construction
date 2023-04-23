@@ -3,9 +3,13 @@ from flask_wtf import FlaskForm
 from wtforms import StringField, SubmitField
 from wtforms.validators import DataRequired
 from QueryConversion import *
+from dotenv import load_dotenv
+import os 
 
 app = Flask(__name__)
- 
+load_dotenv()
+NEO4J_SERVER_PASSWORD = os.getenv('NEO4J_SERVER_PASSWORD')
+
 class BasicForm(FlaskForm):
     text_input = StringField("Input your query:",validators=[DataRequired()],render_kw={'style': 'width: 60ch'})
     submit = SubmitField("Submit")
@@ -22,7 +26,7 @@ def success():
         text_input = form.text_input.data
         model  = QueryConversionModel()
         query = model.get_cypherquery(text_input) 
-        return render_template("knowledge_graph.html", query=query)
+        return render_template("knowledge_graph.html", query=query, server_password=NEO4J_SERVER_PASSWORD)
 
 if __name__ == '__main__':
     app.run()
