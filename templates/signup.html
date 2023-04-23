@@ -5,14 +5,14 @@
 <body>
 	<h1 style= "margin-top:180px;text-align:center;font-size:30px">Automatic construction of concept maps for Photosynthesis</h1>
 	<form method="POST" action="/success" style="text-align:center; margin:auto;">    
-	    <p style = "margin-left:400px;padding-top:15px;margin-btm:200px;font-size:16px;font-weight:normal;text-align:left; line-height:20px"> 
-	    	1. Input your query regarding a Photosynthesis concept eg. “Chloroplasts” </br>
+	    <p style = "margin-left:400px;margin-right:400px;padding-top:15px;margin-btm:200px;font-size:16px;font-weight:normal;text-align:left; line-height:20px"> 
+	    	1. Input your query regarding a Photosynthesis concept eg. “Chloroplasts”
 		</p>
-	    <p style = "margin-left:400px;padding-top:10px;font-size:16px;font-weight:normal;text-align:left; line-height:20px"> 
-			2. Optionally, you can include a relationship in your query. The nine main relationships are 'is a', </br>'comprises', 'has property', 'same as', 'produces', 'has example', 'requires', 'combines', 'contains', </br>'states’. Eg. “What do chloroplasts contain?” or “What are the properties of chloroplasts?” </br>	
+	    <p style = "margin-left:400px;margin-right:400px;padding-top:10px;font-size:16px;font-weight:normal;text-align:left; line-height:20px"> 
+			2. Optionally, you can include a relationship in your query. The nine main relationships are 'is a', 'comprises', 'has property', 'same as', 'produces', 'has example', 'requires', 'combines', 'contains', 'states’. Eg. “What do chloroplasts contain?” or “What are the properties of chloroplasts?”
 		</p>
-	    <p style = "margin-left:400px;padding-top:10px;font-size:16px;font-weight:normal;text-align:left; line-height:20px"> 
-			3. After submitting your query, if nothing appears, this means that no corresponding knowledge graph can be </br>found. Please try searching for a different concept or relationship. </br>
+	    <p style = "margin-left:400px;margin-right:400px;padding-top:10px;font-size:16px;font-weight:normal;text-align:left; line-height:20px"> 
+			3. After submitting your query, if nothing appears, this means that no corresponding knowledge graph can be found. Please try searching for a different concept or relationship. </br>
 		</p>
 		<div style = "padding-top:15px">
 			{{ form.text_input(class="form-control")}}	

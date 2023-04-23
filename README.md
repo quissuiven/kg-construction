@@ -14,5 +14,5 @@ API key and Server password have been replaced with placeholders for security re
 
 ## Deployed app
 
-The deployed app is accessible at https://kg-construction.onrender.com/
+The deployed app is accessible at https://kg-construction.onrender.com/. Please use a laptop for the best viewing experience.
 
