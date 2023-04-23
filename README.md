@@ -2,27 +2,17 @@
 
 ## Objective
 
-1. Extract concepts and relationships from a Biology textbook to construct a knowledge graph
+1. Extract concepts and relationships from the Photosynthesis chapter of CK12 Biology textbook, and store the knowledge graph in Neo4j database
 
-2. Provide a natural language interface to query the knowledge graph
+2. Provide an app that takes in input from a natural language interface, and visualizes the corresponding knowledge graph
+
+## Knowledge extraction and storage notebook
+
+You can view the logic for knowledge extraction and storage at https://github.com/quissuiven/kg-construction/blob/main/notebook/knowledge_extraction.ipynb
+
+API key and Server password have been replaced with placeholders for security reasons.
 
 ## Deployed app
 
 The deployed app is accessible at https://kg-construction.onrender.com/
-
-## Running the app on your local
-
-1. Clone this repository
-
-	`git clone https://github.com/quissuiven/kg-construction.git`
-
-2. Build and run Docker Image
-
-	```
-	cd kg-construction
-	docker build -f Dockerfile.txt -t kg-app .
-	docker run --name flask1 -d --publish 5000:5000 kg-app
-	```
-
-3. View the rendered app at http://localhost:5000/
 
